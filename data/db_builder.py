@@ -5,7 +5,11 @@
 import sqlite3
 import os
 DIR = os.path.dirname(__file__)
-DIR += "/" + "spew.db"
+DIR = DIR[:-5] + "/SoftDevP0/spew.db"
+
+f = open("/what_is_dir.txt", "w")
+f.write(DIR)
+f.close()
 
 db = sqlite3.connect(DIR) # open if file exists, otherwise create
 c = db.cursor()                 # facilitate db ops

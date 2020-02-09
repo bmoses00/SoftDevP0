@@ -5,7 +5,7 @@ import sqlite3
 
 import os
 DIR = os.path.dirname(__file__)
-DIR += "/" + "spew.db"
+DIR = DIR[:-5] + "/SoftDevP0/spew.db"
 
 DB_FILE = DIR
 

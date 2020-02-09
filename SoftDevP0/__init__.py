@@ -10,7 +10,8 @@ from flask import flash
 from data import db_manager, db_builder
 # import database functions
 app = Flask(__name__)
-app.secret_key = os.urandom(32)
+#app.secret_key = os.urandom(32)
+app.secret_key = "Apple Pie"
 # set up sessions with random secret key
 
 @app.route("/")
